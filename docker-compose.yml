@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+  backend:
+    build:
+      context: ./docback
+      dockerfile: Dockerfile
+    ports:
+      - "5026:5026"
+    environment:
+      - PORT=5026
+
+  frontend:
+    build:
+      context: ./docfront
+      dockerfile: Dockerfile
+    ports:
+      - "3200:3200"
+    volumes:
+      - ./docfront:/app
+      - /app/node_modules
