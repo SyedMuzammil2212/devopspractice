@@ -12,7 +12,7 @@ app.use(cors())
 const PORT = process.env.PORT || 5025
 
 app.get("/", async (req, res) => {
-    res.status(200).json({ message: "Hello mama" })
+    res.status(200).json({ message: "Hello mama crazy" })
 })
 
 app.post("/hello", async (req, res) => {
