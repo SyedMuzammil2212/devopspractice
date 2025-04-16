@@ -6,12 +6,6 @@ pipeline{
     }
 
     stages{
-        stage('Clone Repositiry'){
-            steps{
-                git 'https://github.com/SyedMuzammil2212/devopspractice.git'
-            }
-        }
-
         stage('Build Images'){
             steps{
                 echo 'Building Docker'
