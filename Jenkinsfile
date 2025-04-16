@@ -1,8 +1,8 @@
-pipline{
+pipeline{
     agent any
 
     environment {
-        COMPOSE_FILE:docker-compose.yml
+        COMPOSE_FILE='docker-compose.yml'
     }
 
     stages{
@@ -21,7 +21,7 @@ pipline{
 
         stage('Deploy App'){
             steps{
-                echo 'Deploying on docker hu',
+                echo 'Deploying on docker hu'
                 sh 'docker-compose up -d'
             }
         }
