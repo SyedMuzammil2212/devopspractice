@@ -6,7 +6,7 @@ export default function Home() {
   const [click, setClick] = useState(false)
   return (
     <div className="">
-      Hello
+      Hello this is a new app
     </div>
   );
 }
